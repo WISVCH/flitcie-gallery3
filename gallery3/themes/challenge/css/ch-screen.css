@@ -1,0 +1,579 @@
+/* @author Erik van Paassen */
+
+html {
+  background-image: url('../images/huisstijl/background.png');
+  background-repeat: repeat-x;
+  background-position: top center;
+  background-attachment: fixed;
+  background-color: #FFFFFF;
+}
+
+body {
+  margin-top: 18px;
+  margin-left: 0;
+  margin-right: 0;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  color: #00314D;
+
+  background-color: transparent;
+}
+
+h1 {
+  display: inline;
+}
+
+h1 a {
+  color: #00314D !important;
+}
+
+h1, h2, h3, h4 {
+  font-family: PTSansBold, Calibri, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 22px;
+  color: #00314D;
+
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+h3, h4 {
+  font-family: PTSansNarrowRegular, Calibri, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+  color: #00314D;
+  text-decoration: none;
+}
+
+h1 a:hover,
+h1 a:active,
+h2 a:hover,
+h2 a:active,
+h3 a:hover,
+h3 a:active,
+h4 a:hover,
+h4 a:active {
+  color: #0898E0;
+  text-decoration: none;
+}
+
+a {
+  color: #0898E0 !important;
+}
+
+.sf-menu a{
+  color: #0898E0 !important;
+  border-left: none;
+}
+
+.g-button {
+  color:#00314D !important;
+}
+
+.g-button:hover,
+.g-button:active {
+  color:#0898E0 !important;
+}
+
+.sf-menu a:hover,
+.sf-menu a:focus,
+.sf-menu a:active {
+  color: #0E4385 !important;
+}
+
+#g-site-menu > ul > li {
+  background-color: transparent;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+  margin-right: 25px;
+}
+
+#g-site-menu > ul > li > a {
+  font-weight: bold;
+  color: #0E4385 !important;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#g-site-menu > ul > li:hover,
+#g-site-menu > ul > li.sfHover,
+#g-site-menu > ul > li > a:focus,
+#g-site-menu > ul > li > a:hover,
+#g-site-menu > ul > li > a:active {
+  background-color: transparent;
+}
+
+#g-site-menu > ul > li:hover {
+  border-bottom-color: #0898E0;
+}
+
+.sf-menu > li > a {
+  border-top: none;
+}
+
+.sf-menu > li > ul {
+  margin-top: 4px;
+}
+
+#g-site-menu ul .sf-sub-indicator {
+  background-image: url('../images/huisstijl/menu-arrows-toplevel.gif');
+  margin-top: 1px;
+}
+
+#g-site-menu > ul > li > a > .sf-sub-indicator {
+  display: inline-block;
+  position: static;
+  margin-left: 2px;
+}
+
+#g-site-menu ul ul .sf-sub-indicator {
+  background-image: url('../images/huisstijl/menu-arrows-sublevel.gif');
+}
+
+#g-site-menu ul ul ul{
+  margin-left: 7px;
+}
+
+#g-site-menu ul ul li,
+#g-site-menu ul ul li:hover,
+#g-site-menu ul ul li.sfHover,
+#g-site-menu ul ul li a:focus,
+#g-site-menu ul ul li a:hover,
+#g-site-menu ul ul li a:active {
+  background-color: #FFFFFF;
+}
+
+#g-site-menu ul ul {
+  padding: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+
+  background-color: #FFFFFF;
+  background-image: none;
+
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+#g-site-menu ul ul li a {
+  border-top: 1px solid #C6DEEB;
+}
+
+#g-site-menu ul ul li:first-child a {
+  border-top: none;
+}
+
+div#wrapper {
+  width: 1000px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: relative;
+}
+
+div#header {
+  width: 100%;
+  height: 210px;
+
+  position: relative;
+
+  background-image: url('../images/huisstijl/header.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+div#header div#logo {
+	width: 292px;
+	height: 102px;
+
+	position: relative;
+	top: 30px;
+	left: 648px;
+  z-index: 2;
+}
+
+div#page {
+  width: 100%;
+
+  /* This should be here for maintaining a correct page length. */
+  padding-top: 1px;
+  padding-bottom: 25px;
+
+  background-image: url('../images/huisstijl/page.png');
+  background-position: top center;
+  background-repeat: repeat-y;
+}
+
+div#main {
+  width: 890px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: -115px;
+}
+
+.g-breadcrumbs {
+  position: relative;
+  padding: 0;
+}
+
+div#footer {
+  width: 100%;
+  height: 20px;
+
+  background-image: url('../images/huisstijl/footer.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+div#doc4 {
+  width: 890px;
+  border: none;
+  background-color: transparent;
+}
+
+div#g-content {
+  width: auto;
+  padding: 0;
+  /*font-size: 13px;*/
+}
+
+#yui-main {
+  float: none !important;
+}
+
+#yui-main .yui-b {
+  width: 100%;
+}
+
+#g-content p,
+#g-content li {
+  font-size: 13px;
+}
+
+.g-block ,
+.g-message-block {
+  font-size: 13px;
+}
+
+#g-content #g-album-grid > li {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#g-content #g-album-grid .g-item {
+  width: 152px;
+}
+
+#g-content #g-album-grid .g-item .g-context-menu li {
+	font-size: 10px;
+}
+
+.g-item h2 {
+  font-family: PTSansRegular, Calibri, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+}
+
+.g-item h2 a {
+  color: #00314D !important;
+  text-decoration: none;
+}
+
+.g-hover-item  {
+  border-color: #ABDCF5 !important;
+  background-image: url('../images/huisstijl/g-hover-item.gif');
+  background-repeat: no-repeat;
+}
+
+#g-content .g-hover-item h2,
+#g-content .g-hover-item .g-metadata {
+  display: none;
+}
+
+#g-content .g-hover-item.g-album h2 {
+	display: block;
+}
+
+.g-item img {
+  padding: 5px;
+  background-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #EEEEEE;
+}
+
+#g-content #g-album-grid {
+	width: 900px;
+	margin-left: -10px;
+	margin-top: 5px;
+}
+
+.huidig-bestuursjaar {
+	margin-top: 30px;
+	margin-bottom: 35px;
+}
+
+.huidig-bestuursjaar-meer a {
+	text-decoration: none;
+}
+
+.huidig-bestuursjaar-meer-pijltjes {
+	margin-bottom: 15px;
+
+	font-size: 90px;
+	font-weight: bold;
+	text-shadow: rgba(0, 49, 77, 0.25) 5px 3px;
+}
+
+#g-content #g-album-grid .g-album h2 span.g-album {
+  display: none;
+}
+
+#g-content #g-album-grid .g-album {
+  background-color: #FFFFFF;
+  background-image: url('../images/huisstijl/g-hover-item.gif');
+  background-repeat: no-repeat;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #EEEEEE;
+}
+
+div#g-sidebar {
+  float: none;
+  width: auto;
+  padding: 0;
+  padding-top: 15px;
+  position: static;
+}
+
+div#g-banner {
+  min-height: 20px;
+  padding-right: 0;
+  background-color: transparent;
+  border-color: #ABDCF5;
+}
+
+#g-quick-search-form {
+  position: absolute;
+  top: -3px;
+  right: 0;
+}
+
+div#g-site-menu {
+  height: 34px;
+  left: 0;
+}
+
+#flitcie-logo {
+  display: block;
+  width: 240px;
+  height: 64px;
+
+  position: absolute;
+  left: 0;
+  top : -29px;
+
+  background-image: url('../images/huisstijl/flitcie-logo.gif');
+}
+
+#g-site-menu > ul {
+  margin-left: 265px;
+}
+
+#g-site-menu > ul > li:first-child {
+  display: none;
+}
+
+#g-sidebar .g-block {
+  margin-bottom: 20px;
+}
+
+#g-sidebar .g-block .block-top,
+#g-sidebar .g-block .block-top .block-top-left,
+#g-sidebar .g-block .block-top .block-top-right {
+  height: 43px;
+  background-image: url('../images/huisstijl/corners.png');
+}
+
+#g-sidebar .g-block .block-top {
+  position: relative;
+
+  padding-left: 15px;
+
+  line-height: 43px;
+
+  background-position: 0 0;
+}
+
+#g-sidebar .g-block .block-top-left,
+#g-sidebar .g-block .block-top-right {
+  position: absolute;
+  top: 0;
+  width: 6px;
+}
+
+#g-sidebar .g-block .block-top-left {
+  left: 0;
+  background-position: 0 -43px;
+}
+
+#g-sidebar .g-block .block-top-right {
+  right: 0;
+  background-position: -10px -43px;
+}
+
+#g-sidebar .g-block h2 {
+  padding: 0;
+  margin-top: 0;
+  font-size: 17px !important;
+  font-weight: bold;
+  color: #00314D;
+
+  display: inline-block;
+  vertical-align: middle;
+
+  background-color: transparent;
+}
+
+#g-sidebar .g-block h2 .sIFR-flash {
+  margin-top: 12px;
+}
+
+#g-sidebar .g-block .g-block-content {
+  margin: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 10px;
+  padding-bottom: 7px;
+
+  border-width: 1px;
+  border-top-width: 0;
+  border-style: solid;
+  border-color: #E2E2E2;
+
+  background-color: #FFFFFF;
+}
+
+#g-add-tag-form input.textbox {
+  width: 150px !important;
+}
+
+.g-paginator {
+  font-size: 12px;
+}
+
+.g-paginator .g-first,
+.g-paginator .g-text-right {
+  width: 33%;
+}
+
+.g-paginator .g-info {
+  width: 34%;
+}
+
+.g-paginator .g-button {
+  width: 80px;
+}
+
+div#g-footer {
+  margin: 0;
+  margin-top: 10px;
+
+  padding: 0;
+  padding-top: 4px;
+
+  border: none;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ABDCF5;
+
+  background-color: transparent;
+
+  text-align: right;
+}
+
+#g-login-menu li {
+	float: none;
+	display: inline;
+}
+
+/* Theming rule for Languages Flags Module */
+#g-user-language-block {
+  position: absolute;
+  top: 172px;
+  right: 55px;
+}
+
+#g-user-language-block .block-top {
+  display: none;
+}
+
+#g-sidebar #g-user-language-block.g-block .g-block-content {
+  width: 125px;
+  height: 15px;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 11px;
+  text-align: right;
+  background-color: transparent;
+}
+
+#g-user-language-block .g-block-content a {
+  text-decoration: none;
+}
+
+#g-user-language-block .g-block-content a:hover {
+  color: #00314D;
+}
+
+#g-language-flag {
+  margin: 0;
+  display: inline;
+}
+
+#g-language-flag img {
+  position: relative;
+  top: 2px;
+  left: -3px;
+  width: 16px;
+  height: 11px;
+  margin: 0;
+}
+
+#links {
+  float: right;
+  text-align: right;
+  font-size: 0.85em;
+  position: relative;
+  top: 0.6em;
+  left: -5.7em;
+  z-index: 3;
+}
+
+#links a {
+  padding-left: 1em;
+  color: #888;
+}
