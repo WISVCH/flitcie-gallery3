@@ -23,6 +23,7 @@ RUN { \
 		echo 'short_open_tag = On'; \
 		echo 'date.timezone = Europe/Amsterdam'; \
 } > /usr/local/etc/php/conf.d/gallery3.ini
+RUN sed -i 's/AllowOverride None/AllowOverride All/g' /etc/apache2/apache2.conf
 
 # make apache2 listen on port 8080 instead of 80 so that we can run the container as non-root
 RUN sed -i 's/:80/:8080/g' /etc/apache2/sites-available/000-default.conf && \
