@@ -63,14 +63,7 @@ class request_Core {
 		{
 			return NULL;
 		}
-		elseif ( ! empty($_SERVER['HTTPS']) AND $_SERVER['HTTPS'] === 'on')
-		{
-			return 'https';
-		}
-		else
-		{
-			return 'http';
-		}
+		return 'https';
 	}
 
 	/**
